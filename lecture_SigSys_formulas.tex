@@ -1,0 +1,120 @@
+\definecolor{darkgreen}{rgb}{0,0.5,0}
+
+\newcommand{\Ainvertedhat}{\stackrel{\mathrel{\raisebox{.001in}{\reflectbox{\rotatebox[origin=c]{180}{$\hat{}$}}}}}{A}}
+
+\newcommand{\muone}{{\color{red}\mu_1}}
+\newcommand{\mutwo}{{\color{blue}\mu_2}}
+\newcommand{\mufused}{{\color{darkgreen}\mu_{fused}}}
+
+
+
+\newcommand{\sone}{\sigma_1}
+\newcommand{\stwo}{\sigma_2}
+\newcommand{\sfused}{\sigma_{fused}}
+
+
+\newcommand{\varone}{{\color{red}\sigma^2_1}}
+\newcommand{\vartwo}{{\color{blue}\sigma^2_2}}
+\newcommand{\varfused}{{\color{darkgreen}\sigma_{fused}^2}}
+
+
+\newcommand{\varsum}{{\color{darkgreen}{\varone + \vartwo}}}
+\newcommand{\varprod}{{\color{darkgreen}{\varone \vartwo}}}
+
+\newcommand{\divvarprodvarsum}{\color{darkgreen}    2\frac {\varprod}{\varsum} 	}
+
+\newcommand{\xx}{\color{darkgreen}{\frac{ - \frac { \sigma_2^2 }{\sigma_1^2 + \sigma_2^2} (x-\mu_1)^2 - \frac{ \sigma_1^2 }{\varsum} (x-\mu_2)^2 } \divvarprodvarsum }}
+
+\newcommand{\myalpha}{{\color{red}\ln ( 2 \pi ( \varone + \vartwo ) )}}
+
+
+
+\newcommand{\CTFS}{\frac{1}{T}\bigints\limits_T {\color{blue}x(t)}e^{-jk\omega_0 t}dt}
+\newcommand{\DTFS}{\frac{1}{N}\sum\limits_N  {\color{blue}x\left[n\right]} e^{-jk\omega_0 n}}
+\newcommand{\CTFT}{\bigints\limits_{\textrm{-}\infty}^{\infty} {\color{blue}x(t)}e^{-j\omega t}dt}
+\newcommand{\DTFT}{\sum\limits^{\infty}_{n=\textrm{-}\infty} {\color{blue}x\left[n\right]}e^{-j\omega n}}
+
+\newcommand{\ICTFS}{\sum\limits_{k=\textrm{-}\infty}^{\infty}{\color{lightblue}X[k]}e^{jk\omega_0 t}}
+\newcommand{\IDTFS}{\sum\limits_N  {\color{lightblue}X[k]} e^{jk\omega_0 n}}
+\newcommand{\ICTFT}{\frac{1}{2\pi}\bigints\limits_{\textrm{-}\infty}^{\infty} {\color{lightblue}X(j\omega)}e^{j\omega t}d\omega}
+\newcommand{\IDTFT}{\frac{1}{2\pi}\bigints_{2\pi} {\color{lightblue}X(e^{j\omega})} e^{j\omega n}d\omega}
+
+\newcommand{\sT}{\bigints\limits_{\textrm{-}\infty}^{\infty} {\color{blue}x(t)}e^{-st}dt}
+\newcommand{\IsT}{\frac{1}{2\pi j} \bigints\limits_{\sigma\textrm{-}j\omega}^{\sigma+j\omega} X(s)e^{st}ds}
+\newcommand{\zT}{\sum\limits^{\infty}_{n=\textrm{-}\infty} {\color{blue}x\left[n\right]}z^{-n}}
+
+\newcommand{\argmin}{\operatornamewithlimits{argmin}}
+
+\newcommand{\A}{\textbf{A}}
+\newcommand{\B}{\textbf{B}}
+\newcommand{\C}{\textbf{C}}
+\newcommand{\D}{\textbf{D}}
+\newcommand{\F}{\textbf{F}}
+\newcommand{\X}{\textbf{X}}
+\newcommand{\Y}{\textbf{Y}}
+\newcommand{\I}{\textbf{I}}
+\newcommand{\bL}{\textbf{L}}
+\newcommand{\U}{\textbf{U}}
+\newcommand{\bu}{\textbf{u}}
+\newcommand{\G}{\textbf{G}}
+\newcommand{\M}{\textbf{M}}
+\newcommand{\N}{\textbf{N}}
+\newcommand{\x}{\textbf{x}}
+\newcommand{\p}{\textbf{p}}
+\newcommand{\rx}{{\color{red}\textbf{x}}}
+\newcommand{\e}{\textbf{e}}
+\newcommand{\xh}{\hat{\textbf{x}}}
+\newcommand{\K}{\textbf{K}}
+\newcommand{\bP}{\textbf{P}}
+\newcommand{\bH}{\textbf{H}}
+\newcommand{\R}{\textbf{R}}
+\newcommand{\Q}{\textbf{Q}}
+\newcommand{\CsIAB}{\C{\color{darkgreen}(s\I-\A)^{-1}}\B}
+\newcommand{\sIA}{{\color{darkgreen}(s\I-\A)}}
+\newcommand{\ut}{\tilde{u}}
+\newcommand{\w}{\textbf{w}}
+\newcommand{\yt}{\tilde{y}}
+\newcommand{\zmone}{z^{-1}} 
+\newcommand{\zmtwo}{z^{-2}} 
+\newcommand{\bzm}{{\color{blue}z^{-1}}} 
+\newcommand{\rzm}{{\color{red}z^{-1}}} 
+\newcommand{\emT}{e^{-T}} 
+\newcommand{\ABCD}{\center
+$\boxed{\begin{array}{rll}
+\dot{\textbf{x}}&=& \textbf{Ax+B}u\\
+{\textbf{y}}&=& \textbf{Cx+D}u
+\end{array}}
+$}
+\newcommand{\esT}{{\color{red}e^{sT}}} 
+\newcommand{\emsT}{{\color{red}e^{-sT}}} 
+
+\newcommand{\mybaa}{{\color{Purple}(\x-\xh)}}
+\newcommand{\myaa}{{\color{Purple}(x-\hat{x})}}
+
+\newcommand{\mPhi}{{\color{brown}\phi}} %m for motor
+\newcommand{\mOmega}{{\color{blue}\omega}}
+\newcommand{\mA}{{\color{blue}A}}
+\newcommand{\mB}{{\color{brown}B}}
+\newcommand{\mEA}{{\color{red}E_A}}
+\newcommand{\mVA}{{\color{red}V_A}}
+\newcommand{\mVF}{{\color{red}V_F}}
+\newcommand{\mVT}{{\color{red}V_T}}
+\newcommand{\mVB}{{\color{red}V_B}}
+\newcommand{\mIF}{{\color{darkgreen}I_F}}
+\newcommand{\mIA}{{\color{darkgreen}I_A}}
+\newcommand{\mIL}{{\color{darkgreen}I_L}}
+\newcommand{\mK}{{\color{blue}K}}
+\newcommand{\mTauInd}{{\color{blue}\tau_{ind}}}
+\newcommand{\mTauLoad}{{\color{blue}\tau_{load}}}
+\newcommand{\mTauNet}{{\color{blue}\tau_{net}}}
+
+\newcommand{\mTorque}{\mTauInd=\mK\mPhi\mIA}
+\newcommand{\mIAmot}{\mIA=\frac{\mVB-\mEA}{R_A}}
+\newcommand{\mIAgen}{\mIA=\frac{\mEA-\mVB}{R_A}}
+\newcommand{\mInducedVoltage}{\mEA=\mK\mPhi\mOmega}
+\newcommand{\mEAratioOne}{\frac{{\mEA}_1}{{\mEA}_2} = \frac{\mK\mPhi_1\mOmega_1}{\mK\mPhi_2\mOmega_2}}
+\newcommand{\mEAratioTwo}{\frac{{\mEA}_1}{{\mEA}_2} &=& \frac{\mK\mPhi_1\mOmega_1}{\mK\mPhi_2\mOmega_2}}
+
+\newcommand{\mLorentz}{{\color{blue}\mathbf{F}} = \mIA({\color{blue}\boldsymbol{\ell}} \times \mB)}
+
+
