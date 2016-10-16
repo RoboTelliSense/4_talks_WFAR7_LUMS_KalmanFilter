@@ -26,6 +26,7 @@ Makefile*
 *.aux
 *blx.bib
 *.bas
+*.bcf
 *.bib.bak
 *.bin
 *.bbl
