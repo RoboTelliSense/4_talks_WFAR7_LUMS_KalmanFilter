@@ -1,10 +1,24 @@
 %INITIAL
-\documentclass{beamer}
-\usetheme{Warsaw}
+\include{begin}
 \include{lecture_SigSys_formulas}
 \title{Kalman Filter}
 
-\begin{document}
+
+%CONDITIONAL
+\setboolean{PrintHandout}{false}
+\mypagenum\ifthenelse{\boolean{PrintHandout}}
+{
+	\pgfpagesuselayout{4 on 1}[a4paper,border shrink=2mm,landscape] 
+}
+{
+	\setboolean{ShowOverlays}{true}
+}
+
+%counters
+%\newcounter{cnt_Number}\regtotcounter{cnt_Number}
+%\newcounter{cnt_LogicGates}\regtotcounter{cnt_LogicGates}
+%\newcounter{cnt_Boolean}\regtotcounter{cnt_Boolean}
+
 %START
 \begin{frame}[plain]
 %\title{3rd German-Pakistani Workshop on Field and Assistive Robotics}
